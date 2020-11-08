@@ -1,27 +1,5 @@
 # pwgenerator.py
 
-# Tvojou ulohou je vyrobit jednoduchy generator nahodnych hesiel
-# Znakova sada je postavena na znakoch ASCII s decimalnym indexom 33-90 a
-# 97-126.
-# Program by sa mal uzivatela spytat kolko hesiel by chcel vygenerovat a ake
-# dlhe by mali byt. Zaroven by sa mal spytat, ake zlozenie hesla si uzivatel
-# predstavuje.
-#
-# Priklad vystupu:
-# ===============
-# Dlzka hesla: 8
-# pocet hesiel: 3
-# Zlozenie
-#   1) len pismena
-#   2) pismena a cisla
-#   3) pismena + cisla + specialne znaky
-# Volba zlozenia: 2
-#
-# aBie2aep
-# ohvae8Xe
-# yiez3oV0
-# podmínkou je: z každé sady min. 1 znak
-
 
 import random
 
@@ -33,7 +11,8 @@ spec_znaky = '!"#$%&\'()*+,-./:;<>=?@{}|~[]\\^_¨'
 
 
 def vyber_znak(sada) -> str:
-    """Vybírá konkrétní znak ze zadané sady dané globální proměnné mala, velka apod. """
+    """Vybírá konkrétní znak ze zadané sady (mala/velka/cisla/spec_znaky)
+    dané globální proměnné. """
     return random.choice(sada)
 
 
