@@ -2,15 +2,16 @@
 
 import sys
 
+print()
 
 def luhn(cardnum) -> bool:
-    """Berie cislo karty a vrati True/False podla toho ci Luhnov algoritmus overi
+    """Bere cislo karty a vrati True/False podle toho jestli Luhnuv algoritmus overi
     platnost karty.
-    1. Cifry v cisle karty sa revertuju
-    2. Cifry na parnych (sudych) poziciach sa zosumuju
-    3. Cifry na neparnych (lichych) poziciach sa vynasobia cislom 2 + ciferne sectou
-    4. Urobi sa vysledna suma
-    5. Vysledok musi byt delitelny 10
+    1. Cifry v cisle karty se revertuji
+    2. Cifry na sudych pozicich se zesumuji
+    3. Cifry na lichych pozicich se vynasobi cislem 2 + ciferne se sectou
+    4. Udela se vysledna suma
+    5. Vysledek musi byt delitelny 10
     """
 
     cardnum_revert = cardnum[::-1]  # revertuju
@@ -72,24 +73,24 @@ def main(cardnum: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        sys.exit("{}: Program berie prave 1 argument "
-                 "pre cislo karty".format(sys.argv[0]))
+        sys.exit("{}: Program bere prave 1 argument "
+                 "pro cislo karty".format(sys.argv[0]))
     main(sys.argv[1])
 
 
 
 # Priklady vystupu:
 # ./python3 luhn.py 4532793439971390
-#       Validne cislo karty: VISA
+#       Validni cislo karty: VISA
 #
 # ./python3 luhn.py 5519664409261324
-#       Validne cislo karty: Mastercard
+#       Validni cislo karty: Mastercard
 #
 # ./python3 luhn.py 376932432175784
-#       Validne cislo karty: Neznamy vyrobca
+#       Validni cislo karty: Neznamy vyrobce
 #
 # ./python3 luhn.py 372232432175784
-#       Nevalidne cislo karty
+#       Nevalidni cislo karty
 #
 
 
