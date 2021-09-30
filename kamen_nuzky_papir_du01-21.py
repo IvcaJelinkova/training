@@ -1,4 +1,5 @@
 # hra kámen, nůžky, papír
+# 1. hodina PyLadies kurzu pro začátečníky
 
 from random import randrange
 tah_pocitace = randrange (3)
