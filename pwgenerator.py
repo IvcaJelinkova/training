@@ -11,23 +11,21 @@ spec_znaky = '!"#$%&\'()*+,-./:;<>=?@{}|~[]\\^_¨'
 
 
 def vyber_znak(sada) -> str:
-    """Vybírá konkrétní znak ze zadané sady (mala/velka/cisla/spec_znaky)
-    dané globální proměnné. """
+    """Vybira konkretni znak ze zadane sady (mala/velka/cisla/spec_znaky). """
     return random.choice(sada)
 
 
 
-
 def main(delka_hesla, pocet_hesel, slozeni) -> str:
-    """Vygeneruje zadaný počet hesel dané délky a složení.
-    Podmínkou je vybrat z každé sady min. 1 znak. """
+    """Vygeneruje zadany pocet hesel dane delky a slozeni.
+    Podminkou je vybrat z kazde sady min. 1 znak. """
     for pocet in range(pocet_hesel):
         heslo = []
         if slozeni == 1:
             heslo.append(vyber_znak(mala))
             heslo.append(vyber_znak(velka))
 
-            for i in range(delka_hesla-2):
+            for i in range(delka_hesla - 2):
                 sada = random.choice([mala, velka])
                 heslo.append(vyber_znak(sada))
 
@@ -36,7 +34,7 @@ def main(delka_hesla, pocet_hesel, slozeni) -> str:
             heslo.append(vyber_znak(velka))
             heslo.append(vyber_znak(cisla))
 
-            for i in range(delka_hesla-3):
+            for i in range(delka_hesla - 3):
                 sada = random.choice([mala, velka, cisla])
                 heslo.append(vyber_znak(sada))
 
@@ -46,7 +44,7 @@ def main(delka_hesla, pocet_hesel, slozeni) -> str:
             heslo.append(vyber_znak(cisla))
             heslo.append(vyber_znak(spec_znaky))
 
-            for i in range(delka_hesla-4):
+            for i in range(delka_hesla - 4):
                 sada = random.choice([mala, velka, cisla, spec_znaky])
                 heslo.append(vyber_znak(sada))
 
