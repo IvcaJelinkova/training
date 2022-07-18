@@ -4,6 +4,7 @@
 # Upgrade: kontroluje, zda je to číslo. Zadaná čísla vypíše v seznamu.
 
 def zadej_cislo():
+    """Funkce se ptá na číslo a kontroluje, zda uživatel zadal číslo. """
     while True:
         cislo = input('Zadej celé číslo: ')
         try:
