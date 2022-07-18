@@ -12,7 +12,10 @@ znak = input('Zadej znak k vypisování: ')
 pocet_radku = int(input('Zadej počet řádků: '))
 pocet_sloupcu = int(input('Zadej počet sloupců: '))
 
-for i in range(pocet_radku): 
-    for i in range(pocet_sloupcu): 
-        print(znak, end=' ')
-    print()
+for cislo_radku in range(pocet_radku): 
+    #print('i:', cislo_radku, end='')
+    if cislo_radku in (0, pocet_sloupcu-1):     # prvni a posledni radek ma vzdy (znak+mezera)
+        print((znak + ' ') * pocet_sloupcu) 
+    else: 
+        print(znak + ' ' + (' ' * 2) * (pocet_sloupcu - 2) + znak)      # ostatni radky maji (znak+mezera) pouze jako prvni a posledni clen
+    
