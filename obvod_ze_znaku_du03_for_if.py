@@ -19,3 +19,9 @@ for cislo_radku in range(pocet_radku):
     else: 
         print(znak + ' ' + (' ' * 2) * (pocet_sloupcu - 2) + znak)      # ostatni radky maji (znak+mezera) pouze jako prvni a posledni clen
     
+
+#another tasks: 
+for i in 'Ahoj světe!': 
+    print(i)        #print each character, don't work for numbers of course
+
+
