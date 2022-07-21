@@ -23,17 +23,26 @@ from random import choice
 
 failed_tries = 0
 
-def vyber_slovo():
-    mozna_slova = ["trávník", "les", "kefír"]
-    slovo = choice(mozna_slova)
-    return slovo
+def choose_word():
+    possible_words = ["trávník", "les", "kefír"]
+    word = choice(possible_words)
+    return word
 
-def podtrzitka(slovo):
-    #print(str(len(slovo)) + ' ' + slovo)
-    pocatecni_podtrzitka = '_ ' * len(slovo)
-    return pocatecni_podtrzitka
-print(podtrzitka(vyber_slovo()))
+def underscores(word):
+    #print(str(len(word)) + ' ' + word)
+    opening_underscores = '_ ' * len(word)
+    return opening_underscores
+print(underscores(choose_word()))
 print()
+
+
+while True: 
+    character = input('Enter one letter. ')
+    if character in word: 
+        print('jsem tu! ')
+        False
+    pass
+ 
 
 
 #obrazek.py download from https://gist.github.com/encukou/77376e445356a9843e278ba387b168f0.js
