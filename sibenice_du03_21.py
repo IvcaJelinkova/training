@@ -5,8 +5,8 @@
 
 # OK - Počítač náhodně zvolí slovo (trávník, stromek, stavení). malá písmena a bez opakujících se písmen (čokoláda).
 
-#  - Výchozí stav je řetězec s tolika podtržítky, kolik je ve vybraném slově písmen.
-#  - Výchozí počet neúspěšných pokusů je nula.
+# OK - Výchozí stav je řetězec s tolika podtržítky, kolik je ve vybraném slově písmen.
+# OK - Výchozí počet neúspěšných pokusů je nula.
 # Stále dokola:
     #  - Zeptej se hráče na písmeno.
     #  - Pokud je to písmeno ve vybraném slově, zaměň ve stavu příslušná podtržítka
@@ -21,11 +21,19 @@
 
 from random import choice
 
+failed_tries = 0
+
 def vyber_slovo():
-        mozna_slova = ["trávník", "stromek", "stavení"]
-        slovo = choice(mozna_slova)
-        return slovo
-print(vyber_slovo())
+    mozna_slova = ["trávník", "les", "kefír"]
+    slovo = choice(mozna_slova)
+    return slovo
+
+def podtrzitka(slovo):
+    #print(str(len(slovo)) + ' ' + slovo)
+    pocatecni_podtrzitka = '_ ' * len(slovo)
+    return pocatecni_podtrzitka
+print(podtrzitka(vyber_slovo()))
+print()
 
 
 #obrazek.py download from https://gist.github.com/encukou/77376e445356a9843e278ba387b168f0.js
