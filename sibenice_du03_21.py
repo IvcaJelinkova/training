@@ -1,6 +1,6 @@
 #sibenice.py
 
-# rozdel projekt do funkci a modulu s hezkymi jmény, piš testy a dokumentační řetězce,
+# rozděl projekt do funkci a modulu s hezkymi jmény, piš testy a dokumentační řetězce,
 # funkční kousky dávej postupně do Gitu.
 
 #  - Počítač náhodně zvolí slovo (trávník, stromek, stavení). malá písmena a bez opakujících se písmen (čokoláda).
