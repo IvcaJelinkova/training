@@ -102,6 +102,11 @@ people_information_mod(people_d, "Richard")
 # 8) Define a lambda function doing the same as in Chapter 2 (function with three arguments which returns the sum of the first number 
 # multiplied by 3, the second multiplied by 2, and the third one and their sum raised to the second power.).
 #For example, for numbers 10, 20, 30 the result should be: (10*3 + 20*2 + 30)² = 100² = 10000
+# Define a lambda function
+fun = lambda a, b, c: (3 * a + 2 * b + c)**2
+# Test it
+print(fun(1,2,3))
+print(fun(3,2,1))
 
 
 
