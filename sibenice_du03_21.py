@@ -32,6 +32,7 @@ def underscores(word):
     #print(str(len(word)) + ' ' + word)
     opening_underscores = '_ ' * len(word)
     return opening_underscores
+
 print(underscores(choose_word()))
 print()
 
