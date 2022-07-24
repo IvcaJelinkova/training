@@ -69,6 +69,14 @@ for i in people_dict.keys():
   print("---------")
 
 
+# 6) In the people list, all the heights are in cm. Convert them to inches (divide by 2.54), round off the result to 2 digits 
+# and print message "Name has height of x inches".
+# # Data
+people = [["Alex", 178], ["Noah", 189], ["Peter", 175], ["John", 185], ["Michelle", 165]]
+# Print all the heights in inches with names
+for i in range(len(people)):
+    if type(people[i]) is list:
+     	print(people[i][0], 'has height of', round(people[i][1]/2.54, 2) , 'inches')
 
 
 
