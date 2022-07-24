@@ -69,7 +69,7 @@ for i in people_dict.keys():
   print("---------")
 
 
-# 6) In the people list, all the heights are in cm. Convert them to inches (divide by 2.54), round off the result to 2 digits 
+# 6) iterate two-dimensional list: In the people list, all the heights are in cm. Convert them to inches (divide by 2.54), round off the result to 2 digits 
 # and print message "Name has height of x inches".
 # # Data
 people = [["Alex", 178], ["Noah", 189], ["Peter", 175], ["John", 185], ["Michelle", 165]]
@@ -77,6 +77,32 @@ people = [["Alex", 178], ["Noah", 189], ["Peter", 175], ["John", 185], ["Michell
 for i in range(len(people)):
     if type(people[i]) is list:
      	print(people[i][0], 'has height of', round(people[i][1]/2.54, 2) , 'inches')
+
+
+# 7) Define a function people_information with one argument d (this will be people_d dictionary!) and name (which will be the name 
+# of the person - key in this dictionary), which prints the following output – Name, Age, Height:
+# People dictionary
+people_d = {'Alex': (23, 178), 'Noah': (34, 189), 'Peter': (29, 175)}
+people_d["John"] = (41, 185)
+people_d["Michelle"] = (35, 165)
+
+def people_information_mod(d, name):
+  if name not in people_d.keys():
+    print("There is no information about", name)
+  else:
+    print("Name:", name)
+    print("Age:", people_d[name][0], "y.o.")
+    print("Height:", people_d[name][1], "cm")
+
+# Test your function
+people_information_mod(people_d, "Alex")
+people_information_mod(people_d, "Richard")
+
+
+# 8) Define a lambda function doing the same as in Chapter 2 (function with three arguments which returns the sum of the first number 
+# multiplied by 3, the second multiplied by 2, and the third one and their sum raised to the second power.).
+#For example, for numbers 10, 20, 30 the result should be: (10*3 + 20*2 + 30)² = 100² = 10000
+
 
 
 
