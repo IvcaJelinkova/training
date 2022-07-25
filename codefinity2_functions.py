@@ -49,3 +49,17 @@ def multiply_elements(*numbers):
 # Testing
 multiply_elements(3, 6, 1, 2)
 
+
+# 5) **kwargs
+#Code a function, named function, that will take in an unknown number of named arguments. This function runs for each argument 
+# using the for loop and prints only those longer than 6 characters.
+# Write your code below
+def function(**variables):
+    for x in variables.values():
+        if len(x) > 6:
+            print(x)
+
+# Testing
+function(name="Max", town="London", language="English")
+
+
