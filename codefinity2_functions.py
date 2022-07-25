@@ -63,3 +63,15 @@ def function(**variables):
 function(name="Max", town="London", language="English")
 
 
+# 6) Outer and inner functions: 
+# Write your code below
+def outer_function():
+    print('The perimeter of this square is equal to:')
+    def inner_function(side_of_square):
+        # Calculate the perimeter
+        perimeter = 4*side_of_square
+        print(perimeter)
+    inner_function(7)
+
+# Testing
+outer_function()
