@@ -94,5 +94,18 @@ result = sum_of_numbers(7)
 print(result)
 
 
+# 8) sum of numbers in list: 
+# You need to implement a function, named sum_of_elements, that calculates the sum of the items from a list.
+# Write your code below
+def sum_of_elements(list):
+    if len(list) == 1:
+        return list[0]
+    else:
+        return sum_of_elements(list[:-1]) + list[-1]
+
+# Testing 
+result = sum_of_elements([54, 3, 21, 67, 43, 1])
+print(result)
+
 
 
