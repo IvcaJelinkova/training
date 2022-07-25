@@ -75,3 +75,24 @@ def outer_function():
 
 # Testing
 outer_function()
+
+
+
+# 7) recursion: 
+#You have to implement a function, named sum_of_numbers, which calculates the sum of natural numbers from 1 to n. For example:
+# if number = 5, you will get such a result 5 + 4 + 3 + 2 + 1 = 15
+# To check, take number = 7
+# Write your code below
+def sum_of_numbers(number):
+    if number == 1:
+        return 1
+    else:
+        return number + sum_of_numbers(number - 1) 
+
+# Testing 
+result = sum_of_numbers(7)
+print(result)
+
+
+
+
