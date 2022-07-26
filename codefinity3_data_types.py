@@ -70,5 +70,25 @@ new_string1 = string.replace('bicycle','horse')     # replace the word "bicycle"
 print(new_string1)
 
 
+# 6) Boolean: 
+# This statement equals True
+True_statement1 = bool(-90)
+# This statement equals True
+True_statement2 = bool("La vie est belle")
 
+# This statement equals False
+False_statement1 = bool(0j)
+# This statement equals False
+False_statement2 = bool(None)
 
+print(True_statement1,True_statement2)
+print(False_statement1,False_statement2)
+
+# Make this statement equals False
+print('C'>'D')  # it compares words by the first letters that different 
+
+# Make this statement equals False
+print("Codefinity"<"Art")
+
+# Make this statement equals True
+print("Programming">"Data")
