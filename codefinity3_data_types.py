@@ -92,3 +92,14 @@ print("Codefinity"<"Art")
 
 # Make this statement equals True
 print("Programming">"Data")
+
+
+# 7) Comparing strings: 
+# make it True
+statement1 = 'Anabel'>'A'
+statement2 = 'Diana'<'k'
+statement3 = 'Maria'<'m'
+
+print(statement1)
+print(statement2)
+print(statement3)
