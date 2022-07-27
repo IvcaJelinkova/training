@@ -1,7 +1,7 @@
 # codefinity5_loops.py
 
 # 1) for loop
-# 2) in range(start, end, step) 
+# 1.1) in range(start, end, step) 
 # Decreasing --> negative step :-)
 # Printing numbers from 10 to 0
 for i in range(10, -1, -1):
@@ -15,7 +15,7 @@ for i in reversed(numbers):     # Printing all elements of the reversed list
     print(i)
 print('Count:' + str(counter) + '\n')
 
-# 3) break, continue, pass of loop 
+# 1.2) break, continue, pass of loop 
 # The continue statement skips a block of code in the loop for the current iteration only.
 
 numbers = [2, 3, 8, 5, 8]
@@ -30,7 +30,7 @@ else:   # the else block, which will be executed when the loop terminates normal
   print('Done')
 print()
 
-# 4) Enumerate():   wanted to access both value and its index number
+# 1.3) Enumerate():   wanted to access both value and its index number
 # Count the number of numbers which are multiples of three in the list
 numbers = [2, 3, 8, 5, 6, 7]
 counter = 0
@@ -48,4 +48,49 @@ for index, value in enumerate(numbers):
     
 # Print the 'counter'
 print(counter)
+
+
+
+print('_______________________________________________________________')
+# 2) while loop: 
+# Print numbers from 5 to 0.
+i = 5
+
+while i > -1:
+  print(i)
+  # Decrease 'i'
+  i -= 1
+
+
+# 2.1) Print the sum of squares of numbers in the list:
+numbers = [1, 2, 4, 5, 7]
+counter = 0
+i = 0
+
+# Set 'while' loop to work with 'numbers'
+while i < len(numbers):
+  # Add squares of numbers to the 'counter'
+  counter += numbers[i] ** 2
+  i += 1
+
+print(counter)
+print()
+
+
+# 2.2) Print numbers from the list. Stop printing, if you meet a negative value: 
+numbers = [2, 3, 4, -11, 5]
+i = -1
+
+while i < len(numbers)-1: 
+  # Increase 'i'
+  i += 1
+  if numbers[i] < 0:
+    # Print a negative element
+    print('Negative number was found!: ', numbers[i])
+    break       # Finish the loop
+  else:
+    continue        # Continue searching
+
+
+
 
