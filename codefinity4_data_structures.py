@@ -76,23 +76,3 @@ set_1.clear()       # delete all the elements from set
 print(set_1)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
